@@ -113,5 +113,5 @@ SELECT deptM.dept_no, dept.dept_name, deptM.emp_no, emp.last_name, emp.first_nam
 	JOIN employees as emp on emp.emp_no = deptM.emp_no	
 ;
 -- query 8
-SELECT last_name, count(last_name) from employees group by last_name
+SELECT last_name, count(last_name) from employees group by last_name order by count desc
 ;
